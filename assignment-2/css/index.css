@@ -1,13 +1,79 @@
 body{
-    
     background-color: beige;
-    
 }
 
-h1{
-    
+div{
+    text-align: center
+}
+
+/* To allign the video better */
+.vid{
+    padding-top: 100px;
+}
+
+
+/* For regular text formatting */
+h1.mainTitle{ 
+    font-size: 300%;
     font-family: monospace;
-    font-style: italic;
-    font-family: 'Merriweather'
-    
+    font-style: oblique;
+    font-family: 'Merriweather';
+}
+h1.footer{
+    font-size: 100%;
+    font-family: monospace;
+    font-style: oblique;
+    font-family: 'Merriweather';
+}
+
+/* To create the bar and the dropdown list */
+.bar{
+    position: fixed;
+    width: 100%;
+    padding: 0;
+}
+
+.bar, .ddList{
+    list-style: none;
+}
+
+.cell, .ddCell{
+    text-align: center;
+    line-height:50px;
+    font-size: 25px;
+    width: 15%;
+    background-color: burlywood ;
+    height: 50px;
+    float: left;
+    border:1px solid black;
+    font-family: 'Merriweather';   
+    color: black;
+}
+
+.ddCell{
+    width: 100%;
+    font-size: 20px;
+    display: none;
+    padding: 8px;
+}
+
+.cell:hover .ddCell{
+    display: block;
+}
+
+/* To make the table look better */
+table{
+    width: 100%;
+}
+
+table, th, td{
+  border: 3px solid black;
+}
+
+footer{
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    padding:auto;
+    margin: auto;
 }
